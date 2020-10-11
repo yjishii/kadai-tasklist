@@ -5,14 +5,9 @@
 
 <c:import url="../layout/app.jsp">
     <c:param name="content">
-
         <h2>id : ${task.id} のタスク詳細ページ </h2>
     <table>
       <tbody>
-        <tr>
-          <th>タイトル</th>
-         <td><c:out value="${task.title}" /></td>
-         </tr>
          <tr>
         <th>タスク</th>
          <td><c:out value="${task.content}" /></td>
@@ -30,7 +25,7 @@
 
 
         <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a> </p>
-        <p><a href="${pageContext.request.contextPath}/edit?id=${task.id}">このタスクを編集する</a> </p>
+        <p><a href="${pageContext.request.contextPath}/edit?id=${task.id}">このタスクを編集する</a></p>
 
     </c:param>
 </c:import>
